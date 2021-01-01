@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow ";
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+main nav {
+  font-family: "Barlow Condensed";
+  font-weight: 700;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 10%;
+}
+
+main nav img {
+  margin-right: auto;
+}
+
+main nav a {
+  color: #242942;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 100px;
+}
+
+main nav a:nth-of-type(4) {
+  color: #a0a1ac;
+}
+
+main nav a:last-child {
+  margin-right: 0;
+  color: #a0a1ac;
+}
+
+main .hero-container {
+  margin: auto 10%;
+  font-family: "Barlow Condensed";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .hero-container .hero-info {
+  width: 50%;
+}
+
+main .hero-container .hero-info h3 {
+  color: #a0a1ac;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+main .hero-container .hero-info h3::before {
+  content: "NEW";
+  background-color: #242942;
+  color: white;
+  padding: 1px 8px;
+  border-radius: 40px;
+  margin-right: 4%;
+}
+
+main .hero-container .hero-info h1 {
+  font-size: 65px;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main .hero-container .hero-info p {
+  color: #5b5f71;
+}
+
+main .hero-container .hero-info button {
+  color: white;
+  border: none;
+  background-color: #ff5c5c;
+  padding: 2% 5%;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+main .hero-container .hero-info span {
+  color: #5b5f71;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+main .hero-container .hero-image {
+  overflow: hidden;
+  width: 60%;
+  height: 100%;
+}
+
+main .hero-container .hero-image img {
+  height: 100%;
+}
+
+main .ref {
+  margin: 30px auto;
+  text-align: center;
+  font-family: "Barlow Condensed";
+}
+
+main .ref a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ff5c5c;
+}
+/*# sourceMappingURL=style.css.map */

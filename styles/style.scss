@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+@mixin flex($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+
+$primaryRed: hsl(0, 100%, 68%);
+$neutralVeryDarkBlue: hsl(230, 29%, 20%);
+$neutralDarkGrayishBlue: hsl(230, 11%, 40%);
+$neutralGrayishBlue: hsl(235, 7%, 65%);
+$neutralLightGrayishBlue: hsl(207, 33%, 95%);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow ";
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  @include flex(column, center);
+  height: 100vh;
+
+  nav {
+    font-family: "Barlow Condensed";
+    font-weight: 700;
+    height: 100px;
+    @include flex(row, flex-end);
+    align-items: center;
+    margin: 20px 10%;
+
+    img {
+      margin-right: auto;
+    }
+
+    a {
+      color: $neutralVeryDarkBlue;
+      text-decoration: none;
+      font-weight: 700;
+      margin-right: 100px;
+      &:nth-of-type(4) {
+        color: $neutralGrayishBlue;
+      }
+      &:last-child {
+        margin-right: 0;
+        color: $neutralGrayishBlue;
+      }
+    }
+  }
+
+  .hero-container {
+    margin: auto 10%;
+    font-family: "Barlow Condensed";
+    @include flex(row, space-between);
+    align-items: center;
+
+    .hero-info {
+      width: 50%;
+
+      h3 {
+        color: $neutralGrayishBlue;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        &::before {
+          content: "NEW";
+          background-color: $neutralVeryDarkBlue;
+          color: white;
+          padding: 1px 8px;
+          border-radius: 40px;
+          margin-right: 4%;
+        }
+      }
+
+      h1 {
+        font-size: 65px;
+        width: 100%;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      p {
+        color: $neutralDarkGrayishBlue;
+      }
+
+      button {
+        color: white;
+        border: none;
+        background-color: $primaryRed;
+        padding: 2% 5%;
+        font-family: "Barlow Condensed";
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 5px;
+      }
+      span {
+        color: $neutralDarkGrayishBlue;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-left: 20px;
+      }
+    }
+    .hero-image {
+      overflow: hidden;
+      width: 60%;
+      height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  & .ref {
+    margin: 30px auto;
+    text-align: center;
+    font-family: "Barlow Condensed";
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      color: $primaryRed;
+    }
+  }
+}
